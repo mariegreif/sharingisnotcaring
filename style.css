@@ -1,0 +1,29 @@
+#body {
+    margin: 0;
+}
+
+#screen {
+    position: relative;
+    background-size: 100%;
+    width: 56.25vw;
+    height: 100vw;
+}
+
+#snapchat {
+    background-image: url(grafik/snapchat2.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    width: 56.25vw;
+    height: 100vw;
+}
+
+#snapjoachim {
+    background-image: url(grafik/joachimsnap.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 8vw;
+    width: 46.7vw;
+    top: 23.8vw;
+    left: 5vw;
+}
