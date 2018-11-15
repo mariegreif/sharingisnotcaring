@@ -1,4 +1,4 @@
-#body {
+body {
     margin: 0;
 }
 
@@ -8,6 +8,50 @@
     width: 56.25vw;
     height: 100vw;
 }
+
+/*Startskærm*/
+#logo {
+    background-image: url(grafik/logo.svg);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 40vw;
+    width: 46.7vw;
+    top: 17vw;
+    left: 5vw;
+}
+
+#start {
+    background-image: url(grafik/Toggle_sprite%20copy.svg);
+    background-size: 600% 100%;
+    height: 60vw;
+    width: 50vw;
+    top: 51vw;
+    left: 4vw;
+    position: absolute;
+}
+
+#mobilbaggrund {
+    background-image: url(grafik/Iphone%20startsk%C3%A6rm.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    width: 56.25vw;
+    height: 100vw;
+}
+
+/*Snapchat*/
+
+#snapnoti {
+    background-image: url(grafik/snapnoti.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 11vw;
+    width: 46.7vw;
+    top: 23.8vw;
+    left: 5vw;
+}
+
 
 #snapchat {
     background-image: url(grafik/snapchat2.svg);
@@ -26,4 +70,295 @@
     width: 46.7vw;
     top: 23.8vw;
     left: 5vw;
+}
+
+
+#tissemand {
+    background-image: url(grafik/tissemand.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 13vw;
+    left: 2vw;
+    width: 52.1vw;
+    height: 100vw;
+}
+
+/*Messenger og Imessage*/
+
+
+
+
+#messengersofie {
+    background-image: url(grafik/messengersofie.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    width: 56.25vw;
+    height: 100vw;
+}
+
+#beskederhanna {
+    background-image: url(grafik/beskederhanna.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    width: 56.25vw;
+    height: 100vw;
+}
+
+#fatima {
+    background-image: url(grafik/fatima.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    width: 56.25vw;
+    height: 100vw;
+}
+
+
+
+/*Valgmuligheder*/
+
+#screenshot {
+    background-image: url(grafik/screenshot.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 30vw;
+    width: 23vw;
+    background-repeat: no-repeat;
+    top: 60vw;
+    left: 1vw;
+}
+
+#luksnapchat {
+    background-image: url(grafik/luksnapchat.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 30vw;
+    width: 23vw;
+    background-repeat: no-repeat;
+    top: 60vw;
+    left: 28vw;
+}
+
+#sendbillede {
+    background-image: url(grafik/sendbillede.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 30vw;
+    width: 23vw;
+    background-repeat: no-repeat;
+    top: 65vw;
+    left: 3vw;
+}
+
+#sletbillede {
+    background-image: url(grafik/sletbillede.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 30vw;
+    width: 23vw;
+    background-repeat: no-repeat;
+    top: 65vw;
+    left: 28vw;
+}
+
+#jaknap {
+    background-image: url(grafik/ja.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 28vw;
+    width: 22vw;
+    background-repeat: no-repeat;
+    top: 60vw;
+    left: 3vw;
+}
+
+#nejknap {
+    background-image: url(grafik/nej.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 28vw;
+    width: 22vw;
+    background-repeat: no-repeat;
+    top: 60vw;
+    left: 28vw;
+}
+
+
+/*notifikationer*/
+
+#beskedsofie {
+    background-image: url(grafik/messengerbeskedsofie.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 14vw;
+    width: 52.2vw;
+    top: 25vw;
+    left: 2.6vw;
+}
+
+#beskedhanna {
+    background-image: url(grafik/beskedhanna.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 11vw;
+    width: 52.2vw;
+    top: 15vw;
+    left: 2vw;
+}
+
+
+
+#beskedjoachim {
+    background-image: url(grafik/beskedjoachim.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 11vw;
+    width: 52.2vw;
+    top: 15vw;
+    left: 2vw;
+}
+
+
+
+
+/*Levelcomplete og gameover*/
+
+#levelcomplete {
+    background-image: url(grafik/Levelcomplete.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 14vw;
+    width: 56.25vw;
+    height: 100vw;
+    background-repeat: no-repeat;
+}
+
+#gameover {
+    background-image: url(grafik/GameOver.svg);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 14vw;
+    width: 56.25vw;
+    height: 100vw;
+}
+
+#linktilprivatsnak1 {
+    background-image: url(grafik/Privatsnak.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 48vw;
+    left: 9vw;
+    width: 35vw;
+    height: 100vw;
+    background-repeat: no-repeat
+}
+
+#linktilprivatsnak2 {
+    background-image: url(grafik/Privatsnak.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 48vw;
+    left: 9vw;
+    width: 35vw;
+    height: 100vw;
+    background-repeat: no-repeat
+}
+
+
+
+/* effekter */
+.hide {
+    visibility: hidden;
+}
+
+
+.show {
+    visibility: visible;
+}
+
+.show2 {
+    animation-delay: 3s;
+    visibility: visible;
+}
+
+.blur {
+    filter: blur(5px) brightness(80%);
+}
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+dissappear {
+    animation-name: dissappear_kf;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.59, -0.56, .77, 1.34);
+    animation-fill-mode: forwards;
+}
+
+@keyframes dissappear_kf {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+
+.on_off {
+    animation-name: on_off_kf;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(5);
+}
+
+@keyframes on_off_kf {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -500% 0;
+    }
 }
