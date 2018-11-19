@@ -29,6 +29,7 @@ body {
     top: 51vw;
     left: 4vw;
     position: absolute;
+    cursor: pointer;
 }
 
 #mobilbaggrund {
@@ -50,16 +51,28 @@ body {
     width: 46.7vw;
     top: 23.8vw;
     left: 5vw;
+    cursor: pointer;
 }
 
 
 #snapchat {
-    background-image: url(grafik/snapchat2.svg);
+    background-image: url(grafik/snapchat.svg);
     background-size: 100%;
     position: absolute;
     top: 0;
     width: 56.25vw;
     height: 100vw;
+}
+
+#snapchatload {
+    background-image: url(grafik/snapchatload.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 13vw;
+    left: 1.9vw;
+    width: 52.5vw;
+    height: 100vw;
+    background-repeat: no-repeat;
 }
 
 #snapjoachim {
@@ -70,6 +83,17 @@ body {
     width: 46.7vw;
     top: 23.8vw;
     left: 5vw;
+    cursor: pointer;
+}
+
+#snapsofie {
+    background-size: 100%;
+    position: absolute;
+    height: 13vw;
+    width: 52vw;
+    top: 23.8vw;
+    left: 2vw;
+    top: 35vw;
 }
 
 
@@ -78,10 +102,12 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top: 13vw;
-    left: 2vw;
-    width: 52.1vw;
+    top: 10.6vw;
+    left: 1.9vw;
+    width: 52.5vw;
     height: 100vw;
+    background-repeat: no-repeat;
+
 }
 
 /*Messenger og Imessage*/
@@ -107,13 +133,30 @@ body {
     height: 100vw;
 }
 
+
+
 #fatima {
-    background-image: url(grafik/fatima.svg);
-    background-size: 100%;
+    background-image: url(grafik/fatima_sprite2.svg);
+    background-size: 500% 100%;
+    width: 52vw;
     position: absolute;
-    top: 0;
-    width: 56.25vw;
     height: 100vw;
+    animation-name: fatima_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(5);
+    animation-iteration-count: infinite;
+    top: 10vw;
+    left: 2vw;
+}
+
+@keyframes fatima_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: -500% 0%;
+    }
 }
 
 
@@ -124,22 +167,24 @@ body {
     background-image: url(grafik/screenshot.svg);
     background-size: 100%;
     position: absolute;
-    height: 30vw;
+    height: 16.2vw;
     width: 23vw;
     background-repeat: no-repeat;
-    top: 60vw;
-    left: 1vw;
+    top: 73vw;
+    left: 3vw;
+    cursor: pointer;
 }
 
 #luksnapchat {
     background-image: url(grafik/luksnapchat.svg);
     background-size: 100%;
     position: absolute;
-    height: 30vw;
+    height: 16.2vw;
     width: 23vw;
     background-repeat: no-repeat;
-    top: 60vw;
-    left: 28vw;
+    top: 73vw;
+    left: 30vw;
+    cursor: pointer;
 }
 
 #sendbillede {
@@ -151,6 +196,7 @@ body {
     background-repeat: no-repeat;
     top: 65vw;
     left: 3vw;
+    cursor: pointer;
 }
 
 #sletbillede {
@@ -162,6 +208,7 @@ body {
     background-repeat: no-repeat;
     top: 65vw;
     left: 28vw;
+    cursor: pointer;
 }
 
 #jaknap {
@@ -173,6 +220,7 @@ body {
     background-repeat: no-repeat;
     top: 60vw;
     left: 3vw;
+    cursor: pointer;
 }
 
 #nejknap {
@@ -184,6 +232,7 @@ body {
     background-repeat: no-repeat;
     top: 60vw;
     left: 28vw;
+    cursor: pointer;
 }
 
 
@@ -197,6 +246,7 @@ body {
     width: 52.2vw;
     top: 25vw;
     left: 2.6vw;
+    cursor: pointer;
 }
 
 #beskedhanna {
@@ -207,6 +257,7 @@ body {
     width: 52.2vw;
     top: 15vw;
     left: 2vw;
+    cursor: pointer;
 }
 
 
@@ -219,6 +270,7 @@ body {
     width: 52.2vw;
     top: 15vw;
     left: 2vw;
+    cursor: not-allowed;
 }
 
 
@@ -231,8 +283,10 @@ body {
     background-size: 100%;
     position: absolute;
     top: 14vw;
-    width: 56.25vw;
+    top: 14vw;
+    width: 52vw;
     height: 100vw;
+    left: 2vw;
     background-repeat: no-repeat;
 }
 
@@ -242,8 +296,9 @@ body {
     position: absolute;
     background-repeat: no-repeat;
     top: 14vw;
-    width: 56.25vw;
+    width: 52vw;
     height: 100vw;
+    left: 2vw;
 }
 
 #linktilprivatsnak1 {
@@ -289,6 +344,34 @@ body {
     filter: blur(5px) brightness(80%);
 }
 
+
+.blur2 {
+    filter: blur(2px) brightness(90%);
+}
+
+.blur3 {
+    filter: blur(1.5px);
+}
+
+
+.fade_in {
+    animation-name: fadein_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein_kf {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 .fade_out {
     animation-name: fadeout_kf;
     animation-duration: .5s;
@@ -307,6 +390,76 @@ body {
 }
 
 
+
+.fade_out2 {
+    animation-name: fadeout_kf2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf2 {
+    0% {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+
+    10% {
+        opacity: 0.9;
+        filter: brightness(200%);
+    }
+
+    20% {
+        opacity: 0.8;
+        filter: brightness(300%);
+    }
+
+    30% {
+        opacity: 0.7;
+        filter: brightness(400%);
+    }
+
+    40% {
+        opacity: 0.6;
+        filter: brightness(500%);
+    }
+
+    50% {
+        opacity: 0.5;
+        filter: brightness(600%);
+    }
+
+    60% {
+        opacity: 0.4;
+        filter: brightness(700%);
+    }
+
+    70% {
+        opacity: 0.3;
+        filter: brightness(730%);
+    }
+
+    80% {
+        opacity: 0.2;
+        filter: brightness(750%);
+    }
+
+    90% {
+        opacity: 0.1;
+        filter: brightness(800%);
+    }
+
+    100% {
+        opacity: 0;
+        filter: brightness(800%);
+
+    }
+}
+
+
+
+
+
 .pulse {
     animation-name: pulse_kf;
     animation-duration: 1.7s;
@@ -318,11 +471,13 @@ body {
 
 @keyframes pulse_kf {
     0% {
-        transform: scale(0.97);
+        transform: scale(0.90);
+
     }
 
     100% {
         transform: scale(1);
+        filter: brightness(140%)
     }
 }
 
@@ -361,4 +516,166 @@ dissappear {
     100% {
         background-position: -500% 0;
     }
+}
+
+
+:root {
+    font-size: 2vw;
+}
+
+
+#tid {
+    width: 1vw;
+    height: 1vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 98vw;
+    color: white;
+    font-size: 5rem;
+    font-family: sans-serif;
+    display: flex;
+    left: 45vw;
+    pointer-events: none;
+
+}
+
+#besked_sprite {
+    background-image: url(grafik/besked_sprite.svg);
+    background-size: 500% 100%;
+    position: absolute;
+    top: 40vw;
+    left: 38vw;
+    width: 15vw;
+    height: 9vw;
+    animation-name: besked_sprite_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(5);
+    animation-iteration-count: infinite;
+
+}
+
+
+
+@keyframes besked_sprite_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: -500% 0%;
+    }
+}
+
+
+#lockscreen0 {
+    background-image: url(grafik/mobillås0.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    width: 56.25vw;
+    height: 100vw;
+}
+
+#lockscreen1 {
+    background-image: url(grafik/mobillås1.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    width: 56.25vw;
+    height: 100vw;
+}
+
+#lockscreen2 {
+    background-image: url(grafik/lock2.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    width: 56.25vw;
+    height: 100vw;
+}
+
+#lockscreen3 {
+    background-image: url(grafik/mobillås3.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    width: 56.25vw;
+    height: 100vw;
+}
+
+#lockscreen4 {
+    background-image: url(grafik/mobillås4.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    width: 56.25vw;
+    height: 100vw;
+}
+
+#knap1 {
+    background-image: url(grafik/1.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 30vw;
+    width: 12vw;
+    height: 27vw;
+    left: 4vw;
+    background-repeat: no-repeat;
+}
+
+
+#knap2 {
+    background-image: url(grafik/2.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 30vw;
+    width: 12vw;
+    height: 27vw;
+    left: 22vw;
+    background-repeat: no-repeat;
+}
+
+
+#knap3 {
+    background-image: url(grafik/3.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 30vw;
+    width: 12vw;
+    height: 27vw;
+    left: 40vw;
+    background-repeat: no-repeat;
+}
+
+#knap4 {
+    background-image: url(grafik/4.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 45vw;
+    width: 12vw;
+    height: 27vw;
+    left: 4vw;
+    background-repeat: no-repeat;
+}
+
+
+#easter {
+    background-image: url(grafik/easteregg.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    width: 56.25vw;
+    height: 100vw;
+    left: 0vw;
+}
+
+#knaptilbage {
+    background-size: 100%;
+    position: absolute;
+    height: 6vw;
+    width: 4vw;
+    left: 50vw;
+    top: 11vw;
+    cursor: pointer;
 }
