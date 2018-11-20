@@ -11,23 +11,23 @@ body {
 
 /*Startskærm*/
 #logo {
-    background-image: url(grafik/logo.svg);
+    background-image: url(grafik/logo_new.svg);
     background-size: 100%;
     position: absolute;
     background-repeat: no-repeat;
     height: 40vw;
     width: 46.7vw;
-    top: 17vw;
+    top: 23vw;
     left: 5vw;
 }
 
 #start {
-    background-image: url(grafik/Toggle_sprite%20copy.svg);
+    background-image: url(grafik/start_toggle.svg);
     background-size: 600% 100%;
-    height: 60vw;
+    height: 30vw;
     width: 50vw;
-    top: 51vw;
-    left: 4vw;
+    top: 64vw;
+    left: 3vw;
     position: absolute;
     cursor: pointer;
 }
@@ -39,6 +39,31 @@ body {
     top: 0;
     width: 56.25vw;
     height: 100vw;
+}
+
+#setting_effekt_sound {
+    position: absolute;
+    background-size: 100%;
+}
+
+#sfx {
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    left: 45vw;
+    top: 14vw;
+}
+
+.on {
+    background-image: url(grafik/soundon.svg);
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.off {
+    background-image: url(grafik/soundoff.svg);
+    background-size: 100%;
+    cursor: pointer;
 }
 
 /*Snapchat*/
@@ -68,7 +93,7 @@ body {
     background-image: url(grafik/snapchatload.svg);
     background-size: 100%;
     position: absolute;
-    top: 13vw;
+    top: 13.3vw;
     left: 1.9vw;
     width: 52.5vw;
     height: 100vw;
@@ -103,8 +128,8 @@ body {
     background-repeat: no-repeat;
     position: absolute;
     top: 10.6vw;
-    left: 1.9vw;
-    width: 52.5vw;
+    left: 1.3vw;
+    width: 53.5vw;
     height: 100vw;
     background-repeat: no-repeat;
 
@@ -125,7 +150,7 @@ body {
 }
 
 #beskederhanna {
-    background-image: url(grafik/beskederhanna.svg);
+    background-image: url(grafik/beskederhanna2.svg);
     background-size: 100%;
     position: absolute;
     top: 0;
@@ -136,16 +161,16 @@ body {
 
 
 #fatima {
-    background-image: url(grafik/fatima_sprite2.svg);
+    background-image: url(grafik/ekstranyfatima.svg);
     background-size: 500% 100%;
     width: 52vw;
     position: absolute;
-    height: 100vw;
+    height: 80vw;
     animation-name: fatima_kf;
     animation-duration: 1s;
     animation-timing-function: steps(5);
     animation-iteration-count: infinite;
-    top: 10vw;
+    top: 11.9vw;
     left: 2vw;
 }
 
@@ -306,9 +331,9 @@ body {
     background-size: 100%;
     position: absolute;
     top: 48vw;
-    left: 9vw;
+    left: 8.3vw;
     width: 35vw;
-    height: 100vw;
+    height: 28vw;
     background-repeat: no-repeat
 }
 
@@ -317,12 +342,34 @@ body {
     background-size: 100%;
     position: absolute;
     top: 48vw;
-    left: 9vw;
+    left: 8.3vw;
     width: 35vw;
-    height: 100vw;
+    height: 28vw;
     background-repeat: no-repeat
 }
 
+
+#tryagain1 {
+    background-image: url(grafik/replay_ny.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 77.6vw;
+    left: 22.9vw;
+    width: 6.7vw;
+    height: 6.5vw;
+    cursor: pointer;
+}
+
+#tryagain2 {
+    background-image: url(grafik/replay_ny.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 77.6vw;
+    left: 22.9vw;
+    width: 6.7vw;
+    height: 6.5vw;
+    cursor: pointer;
+}
 
 
 /* effekter */
@@ -457,7 +504,25 @@ body {
 }
 
 
+.pulse2 {
+    animation-name: pulse2_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
 
+
+@keyframes pulse2_kf {
+    0% {
+        transform: scale(0.95);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 
 .pulse {
@@ -541,17 +606,18 @@ dissappear {
 }
 
 #besked_sprite {
-    background-image: url(grafik/besked_sprite.svg);
-    background-size: 500% 100%;
+    background-image: url(grafik/toggle_writing.svg);
+    background-size: 600% 100%;
     position: absolute;
-    top: 40vw;
-    left: 38vw;
-    width: 15vw;
-    height: 9vw;
+    top: 35vw;
+    left: 33vw;
+    width: 20vw;
+    height: 22vw;
     animation-name: besked_sprite_kf;
-    animation-duration: 1s;
-    animation-timing-function: steps(5);
+    animation-duration: 2s;
+    animation-timing-function: steps(6);
     animation-iteration-count: infinite;
+    transform: rotateY(180deg);
 
 }
 
@@ -563,7 +629,7 @@ dissappear {
     }
 
     100% {
-        background-position: -500% 0%;
+        background-position: -600% 0%;
     }
 }
 
@@ -619,9 +685,10 @@ dissappear {
     position: absolute;
     top: 30vw;
     width: 12vw;
-    height: 27vw;
+    height: 13vw;
     left: 4vw;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 
@@ -631,9 +698,10 @@ dissappear {
     position: absolute;
     top: 30vw;
     width: 12vw;
-    height: 27vw;
+    height: 13vw;
     left: 22vw;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 
@@ -643,9 +711,10 @@ dissappear {
     position: absolute;
     top: 30vw;
     width: 12vw;
-    height: 27vw;
+    height: 13vw;
     left: 40vw;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 #knap4 {
@@ -654,9 +723,10 @@ dissappear {
     position: absolute;
     top: 45vw;
     width: 12vw;
-    height: 27vw;
+    height: 13vw;
     left: 4vw;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 

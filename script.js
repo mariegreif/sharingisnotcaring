@@ -1,5 +1,6 @@
 window.addEventListener("load", sidenVises);
 
+let showSettingsEffektSound = true;
 
 function sidenVises() {
     console.log("Siden vises");
@@ -25,8 +26,58 @@ function showStart() {
     document.querySelector("#nejknap").addEventListener("click", levelComplete);
     document.querySelector("#sletbillede").addEventListener("click", levelComplete);
     document.querySelector("#sendbillede").addEventListener("click", gameOver);
+
+    document.querySelector("#sfx").addEventListener("click", toggleSounds);
+    document.querySelector("#tryagain1").addEventListener("click", newGame);
+    document.querySelector("#tryagain2").addEventListener("click", newGame);
 }
 
+function toggleSounds() {
+    console.log("toggleSounds");
+
+    if (showSettingsEffektSound == true) {
+        showSettingsEffektSound = false;
+        soundsOff();
+    } else {
+        showSettingsEffektSound = true;
+        soundsOn();
+    }
+
+
+
+}
+
+function soundsOff() {
+    console.log("soundsOff");
+    document.querySelector("#sfx").classList.remove("on");
+    document.querySelector("#sfx").classList.add("off");
+
+    document.querySelector("#snapnotifikationlyd").muted = true;
+    document.querySelector("#smsnotifikationlyd").muted = true;
+    document.querySelector("#messengernotifikationlyd").muted = true;
+    document.querySelector("#screenshotlyd").muted = true;
+    document.querySelector("#vibrate").muted = true;
+    document.querySelector("#lock").muted = true;
+    document.querySelector("#fatimadans").muted = true;
+
+
+}
+
+function soundsOn() {
+    console.log("soundsOn");
+
+    document.querySelector("#sfx").classList.remove("off");
+    document.querySelector("#sfx").classList.add("on");
+
+    document.querySelector("#snapnotifikationlyd").muted = false;
+    document.querySelector("#smsnotifikationlyd").muted = false;
+    document.querySelector("#messengernotifikationlyd").muted = false;
+    document.querySelector("#screenshotlyd").muted = false;
+    document.querySelector("#vibrate").muted = false;
+    document.querySelector("#lock").muted = false;
+    document.querySelector("#fatimadans").muted = false;
+
+}
 
 
 //Startskærm
@@ -35,6 +86,7 @@ function hideStart() {
     document.querySelector("#logo").classList.add("hide");
     document.querySelector("#start").classList.add("on_off");
     document.querySelector("#lock").play();
+    document.querySelector("#setting_effekt_sound").classList.add("hide");
 
 }
 
@@ -43,6 +95,7 @@ function snaplyd() {
     document.querySelector("#snapnotifikationlyd").play();
     document.querySelector("#snapnotifikationlyd").duration = 1;
     document.querySelector("#snapnoti").classList.remove("hide");
+    document.querySelector("#start").classList.add("hide");
 }
 
 //Vibrations lyden
@@ -198,6 +251,7 @@ function gameOver() {
     document.querySelector("#messengersofie").classList.add("hide");
     document.querySelector("#gameover").classList.remove("hide");
     document.querySelector("#fatima").classList.add("hide");
+    document.querySelector("#fatimadans").pause();
 
 }
 
@@ -205,6 +259,7 @@ function gameOver() {
 function fatima() {
     document.querySelector("#messengersofie").classList.add("hide");
     document.querySelector("#fatima").classList.remove("hide");
+    document.querySelector("#fatimadans").play();
     setTimeout(gameOver, 3000);
 }
 
@@ -293,4 +348,9 @@ function showEaster() {
 
 function hideEaster() {
     document.querySelector("#easter").classList.add("hide");
+}
+
+function newGame() {
+    location = location.href;
+
 }
