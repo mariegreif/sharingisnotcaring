@@ -1,5 +1,6 @@
 body {
     margin: 0;
+
 }
 
 #screen {
@@ -7,6 +8,7 @@ body {
     background-size: 100%;
     width: 56.25vw;
     height: 100vw;
+    margin: 0 auto;
 }
 
 /*Startskærm*/
