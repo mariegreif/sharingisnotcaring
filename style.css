@@ -149,6 +149,16 @@ body {
     height: 100vw;
 }
 
+#svarsofie {
+    background-image: url(grafik/svarsofie.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 30vw;
+    height: 7.1vw;
+    top: 35vw;
+    left: 21vw;
+}
+
 #beskederhanna {
     background-image: url(grafik/beskederhanna2.svg);
     background-size: 100%;
@@ -158,7 +168,16 @@ body {
     height: 100vw;
 }
 
+#svarhanna {
+    background-image: url(grafik/ja_besked.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 29vw;
+    height: 4.3vw;
+    top: 40vw;
+    left: 24vw;
 
+}
 
 #fatima {
     background-image: url(grafik/ekstranyfatima.svg);
@@ -621,7 +640,21 @@ dissappear {
 
 }
 
+#besked_sprite1 {
+    background-image: url(grafik/toggle_writing.svg);
+    background-size: 600% 100%;
+    position: absolute;
+    top: 35vw;
+    left: 33vw;
+    width: 20vw;
+    height: 22vw;
+    animation-name: besked_sprite_kf;
+    animation-duration: 2s;
+    animation-timing-function: steps(6);
+    animation-iteration-count: infinite;
+    transform: rotateY(180deg);
 
+}
 
 @keyframes besked_sprite_kf {
     0% {
@@ -683,7 +716,7 @@ dissappear {
     background-image: url(grafik/1.svg);
     background-size: 100%;
     position: absolute;
-    top: 30vw;
+    top: 28.7vw;
     width: 12vw;
     height: 13vw;
     left: 4vw;
@@ -696,7 +729,7 @@ dissappear {
     background-image: url(grafik/2.svg);
     background-size: 100%;
     position: absolute;
-    top: 30vw;
+    top: 28.7vw;
     width: 12vw;
     height: 13vw;
     left: 22vw;
@@ -709,7 +742,7 @@ dissappear {
     background-image: url(grafik/3.svg);
     background-size: 100%;
     position: absolute;
-    top: 30vw;
+    top: 28.7vw;
     width: 12vw;
     height: 13vw;
     left: 40vw;
@@ -721,7 +754,7 @@ dissappear {
     background-image: url(grafik/4.svg);
     background-size: 100%;
     position: absolute;
-    top: 45vw;
+    top: 43.4vw;
     width: 12vw;
     height: 13vw;
     left: 4vw;

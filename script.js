@@ -22,10 +22,10 @@ function showStart() {
     document.querySelector("#beskedsofie").addEventListener("click", messenger);
     document.querySelector("#beskedhanna").addEventListener("click", imessage);
 
-    document.querySelector("#jaknap").addEventListener("click", fatima);
+    document.querySelector("#jaknap").addEventListener("click", svarhanna);
     document.querySelector("#nejknap").addEventListener("click", levelComplete);
     document.querySelector("#sletbillede").addEventListener("click", levelComplete);
-    document.querySelector("#sendbillede").addEventListener("click", gameOver);
+    document.querySelector("#sendbillede").addEventListener("click", svarSofie);
 
     document.querySelector("#sfx").addEventListener("click", toggleSounds);
     document.querySelector("#tryagain1").addEventListener("click", newGame);
@@ -214,15 +214,27 @@ function hannabesked() {
     document.querySelector("#beskedhanna").classList.remove("hide");
 }
 
+
+
 //Imessage samtale
 function imessage() {
     document.querySelector("#beskedhanna").classList.add("hide");
     document.querySelector("#beskederhanna").classList.remove("hide");
 
-    document.querySelector("#besked_sprite").classList.remove("hide");
+    document.querySelector("#svarhanna").classList.add("hide");
 
+    //document.querySelector("#besked_sprite").classList.remove("hide");
 }
 
+function svarhanna() {
+    document.querySelector("#jaknap").classList.add("hide");
+    document.querySelector("#nejknap").classList.add("hide");
+    document.querySelector("#besked_sprite1").classList.add("hide");
+    document.querySelector("#svarhanna").classList.remove("hide");
+
+
+    setTimeout(fatima, 2000);
+}
 
 //Messenger samtale
 function messenger() {
@@ -234,6 +246,18 @@ function messenger() {
     document.querySelector("#messengersofie").classList.remove("hide");
     document.querySelector("#besked_sprite").classList.remove("hide");
 
+    document.querySelector("#svarsofie").classList.add("hide");
+
+}
+
+function svarSofie() {
+    document.querySelector("#sendbillede").classList.add("hide");
+    document.querySelector("#sletbillede").classList.add("hide");
+    document.querySelector("#besked_sprite").classList.add("hide");
+
+    document.querySelector("#svarsofie").classList.remove("hide");
+
+    setTimeout(gameOver, 2000);
 }
 
 //Level Complete
